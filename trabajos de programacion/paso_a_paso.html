@@ -1,0 +1,71 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var pantalla = document.querySelector('canvas');
+    var pincel = pantalla.getContext('2d');
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    var puedoDibujar = false;
+
+    //Variables para dibujar la paleta
+    var xRojo = 0;
+    var xVerde = 50;
+    var xAzul = 100;
+    var yCuadrados = 0;
+    var tamanhoCuadrados = 50;
+
+    function dibujarCirculo(evento) {
+
+        if (puedoDibujar) {
+
+            var x = evento.pageX - pantalla.offsetLeft;
+            var y = evento.pageY - pantalla.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 5, 0, 2 * 3.14);
+            pincel.fill();
+
+        }
+    }
+
+    //Función para dibujar cada uno de los cuadrados de la paleta
+    function dibujarCuadrado(x, y, tamanho, color) {
+
+        pincel.fillStyle = color;
+        pincel.fillRect(x, y, tamanho, tamanho);
+        pincel.fill();
+
+    }
+
+    //Función para dibujar la paleta de colores
+    function dibujarPaletaColores() {
+
+        dibujarCuadrado(xRojo, yCuadrados, tamanhoCuadrados, 'red');
+        dibujarCuadrado(xVerde, yCuadrados, tamanhoCuadrados, 'green');
+        dibujarCuadrado(xAzul, yCuadrados, tamanhoCuadrados, 'blue');
+
+    }
+
+    pantalla.onmousemove = dibujarCirculo;
+
+    function habilitarDibujar() {
+
+        puedoDibujar = true;
+
+    }
+
+    function deshabilitarDibujar() {
+
+        puedoDibujar = false;
+
+    }
+
+    pantalla.onmousedown = habilitarDibujar;
+
+    pantalla.onmouseup = deshabilitarDibujar;
+
+    dibujarPaletaColores();
+
+</script>

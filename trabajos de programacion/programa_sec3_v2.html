@@ -1,0 +1,86 @@
+<canvas width="600" height="400">
+
+
+</canvas>
+
+<script>
+
+    function dibujar_cuadrado(x,y,color){
+        //hacerlo con funcion 
+
+        pincel.fillStyle= color;
+        pincel.fillRect(x,y, 50, 50);
+        pincel.strokeStyle= "black" ;
+        pincel.strokeRect(x,y, 50, 50);
+
+    }
+
+    var pantalla= document.querySelector("canvas");
+    var pincel = pantalla.getContext("2d");
+
+/*
+
+codigo de la manera de realizar un cuadrado 
+
+    pincel.fillStyle= "lightgrey";
+    pincel.fillRect(0,0, 50, 50);
+    pincel.strokeStyle= "black" ;
+    pincel.strokeRect(0,0, 50, 50);
+
+    pincel.fillStyle= "lightgrey";
+    pincel.fillRect(50,0, 50, 50);
+    pincel.strokeStyle= "black" ;
+    pincel.strokeRect(50,0, 50, 50);
+
+    pincel.fillStyle= "lightgrey";
+    pincel.fillRect(100,0, 50, 50);
+    pincel.strokeStyle= "black" ;
+    pincel.strokeRect(100,0, 50, 50);
+
+    pincel.fillStyle= "lightgrey";
+    pincel.fillRect(100,0, 50, 50);
+    pincel.strokeStyle= "black" ;
+    pincel.strokeRect(100,0, 50, 50);
+*/
+
+/*
+ llamando la funcion varias veces 
+    dibujar_cuadrado(0,0,"green");
+    dibujar_cuadrado(50,0,"green");
+    dibujar_cuadrado(100,0,"green");
+*/
+
+/*
+var x=0;
+    //iteraciones con while 
+    while(x<600){
+        //se genera un while par aque recorra 
+        //y llame la funcion para no generar tantos llamados 
+
+        dibujar_cuadrado(x,0,"green");
+        dibujar_cuadrado(x,50,"red");
+        dibujar_cuadrado(x,100,"yellow");
+
+        x=x + 50;
+
+    }
+*/
+
+    for(var x= 0 ; x <600 ; x= x + 50  ){
+        //realizandolo con for 
+        dibujar_cuadrado(x,0,"green");
+        dibujar_cuadrado(x,50,"red");
+        dibujar_cuadrado(x,100,"yellow");
+
+    }
+
+ 
+
+
+
+
+    
+
+
+
+</script>

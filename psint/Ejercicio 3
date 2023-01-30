@@ -1,0 +1,27 @@
+Algoritmo numero_1
+//	Dada una secuencia de números ingresados por teclado que finaliza con un ?-1, por
+//ejemplo: 5,3,0,2,4,4,0,0,2,3,6,0,......,-1; realizar un programa que calcule el promedio de los
+	//	números ingresados. Suponemos que el usuario no insertará número negativos.
+	
+	definir num,aux,const Como Entero
+	definir promedio Como Real
+	
+	escribir "escriba un numero"
+	
+	leer num 
+	aux=num 
+	
+	const=1
+	Mientras num <> -1
+		
+		escribir "ingresa un numero"
+		leer num
+		aux=aux+num
+		const=const+1
+	Fin Mientras
+	
+	promedio=aux/const
+	
+	escribir "el promedio es " promedio 
+
+FinAlgoritmo

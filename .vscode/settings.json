@@ -1,0 +1,12 @@
+{
+    "python.testing.pytestArgs": [
+        "trabajos de programacion"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "cSpell.words": [
+        "disenar",
+        "imagendiferenciales",
+        "limpiarpantalla"
+    ]
+}

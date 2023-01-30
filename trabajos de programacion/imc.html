@@ -1,0 +1,130 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA DE IMC</h1>
+<br>
+<h1>MASA CORPORAL</h1>
+<br>
+
+<script>
+
+	function saltarlinea() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+
+		document.write(frase);
+		saltarlinea()
+	}
+	function calcularIMC(peso,altura){
+
+		imc=peso/(altura*altura);
+		return(imc);
+	}
+	function calcularimc_corto(peso,altura){
+
+		imc=peso/(altura*altura);
+		imprimir("el IMC calculado es: " + imc)
+
+	}
+	function calcularimc_corto_nombre(peso,altura,nombre){
+
+		imc=peso/(altura*altura);
+		imprimir("el IMC calculado de "+ nombre + " es: " + imc)
+	}
+	function calcularimc_variaspersonas(peso1,altura1,nombre1,peso2,altura2,nombre2){
+
+		imc=peso1/(altura1*altura1);
+		imc2=peso2/(altura2*altura2);
+		imprimir("el IMC promedio calculado de "+ nombre1 +" y "+ nombre2 + " es: " + (imc+imc2)/2);
+	}
+
+
+	var imctotalj= calcularIMC(71,1.72);
+	var imctotalr= calcularIMC(75,1.73);
+
+	peso_jose=71
+	altura_jose=1.72
+	imctotalj=peso_jose/(altura_jose*altura_jose);
+
+	imprimir("El IMC de jose  es : " + imctotalj);
+
+	peso_ruben=75
+	altura_ruben=1.73
+	imctotalr=peso_ruben/(altura_ruben*altura_ruben);
+
+	imprimir("El IMC de la ruben es : " + imctotalr);
+
+	peso_david=62
+	altura_david=1.70
+	IMCDAVID=calcularIMC(peso_david,altura_david);
+	imprimir("el calculo del IMC es : "+ IMCDAVID );
+
+
+	imprimir("<h3>imc mas corto</h3>");
+
+	calcularimc_corto(62,1.70); // calculo de david 
+	calcularimc_corto(75,1.73); // calculo persona #2
+	calcularimc_corto(71,1.72);  // calculo persona #1
+
+
+	imprimir("<h3>imc mas corto con nombre </h3>");
+
+	calcularimc_corto_nombre(62,1.70,"david");// calculo de david 
+	calcularimc_corto_nombre(75,1.73,"ruben");  // calculo ruben
+	calcularimc_corto_nombre(71,1.72,"jose"); // calculo jose
+
+
+	imprimir("<h3>imc con doble </h3>");
+
+	calcularimc_variaspersonas(71,1.72,"jose",75,1.73,"ruben");
+	calcularimc_variaspersonas(60,1.72,"mariana",80,1.79,"kathe");
+
+	imprimir("<h3>imc con doble corto  </h3>");
+
+	var imctotalj= calcularIMC(71,1.72);
+	var imctotalr= calcularIMC(75,1.73);
+
+	imprimir("el promedio del imc calculado de jose y raul es: "+(imctotalr+imctotalj)/2);
+
+	imprimir("el promedio del imc calculado de jose y raul es: "+(calcularIMC(71,1.72)+calcularIMC(75,1.73))/2);
+
+	imprimir("<h3>imc con ususario </h3>");
+
+
+	nombre =prompt("ingrese su nombre ")
+	pesoinformado = prompt(nombre+", ingrese el peso");
+	altura_informada= prompt("ingrese su altura");
+
+	imc_calculado=calcularIMC(pesoinformado,altura_informada);
+
+		imprimir(nombre + ", el imc calcualdo es : " + imc_calculado);
+
+		imprimir("<h3>IMC CON CONDICIONALES  </h3>");
+
+
+	if (imc_calculado< 18.5) {
+
+		imprimir("su peso esta por debajo  de lo recomendado");
+	}
+	
+	if (imc_calculado >= 30) {
+
+		imprimir("IMC Considerado obesidad ");
+    }
+	if (imc_calculado > 18.5 ){
+		if (imc_calculado < 25 ){
+
+			imprimir("su peso esta por lo recomendado ");
+		}
+	}
+	if (imc_calculado >= 25){
+		if ( imc_calculado < 30){
+			imprimir("su IMC es considerado como sobrepeso ");
+		}
+
+	}
+
+</script>

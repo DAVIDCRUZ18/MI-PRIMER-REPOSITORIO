@@ -1,0 +1,48 @@
+<meta charset = "UTF-8"> 
+
+<h1>CALCULA LA EDAD DE UNA FAMILIA </h1>
+
+<script>
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarlinea()
+    }
+
+var edadpadre=42 ;
+var edadmadre=38 ;
+var edadhija=15;
+var edadhijo=12;
+
+var total_edad=edadpadre+edadmadre+edadhijo+edadhija;
+
+var media=total_edad/4;
+
+imprimir("la media de las edades es "+ media);
+
+imprimir("ESTO ES CON CICLO WHILE");
+
+var numero_de_miembros=(parseInt(prompt("ingrese la cantidad de miembros que desea consultar")));
+var contador=1;
+var total_edades=0 ;
+
+while(contador <= numero_de_miembros){
+   
+    edad = parseInt(prompt("ingrese la edad de la persona"));
+    total_edades=total_edades+edad;
+    contador++;
+}
+
+imprimir("lad media de las edades de la familia es: "+ total_edades /numero_de_miembros);
+
+imprimir(total_edades);
+
+imprimir("FIN");
+
+</script>|

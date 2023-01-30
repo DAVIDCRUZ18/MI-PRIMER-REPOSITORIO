@@ -1,0 +1,19 @@
+
+Algoritmo sin_titulo
+	Definir num Como entero
+	Definir unidad Como Entero
+	Definir decena Como Entero
+	Definir centena Como Entero
+	
+	num = 0
+	
+	leer num
+	centena = Trunc(num/100)
+	decena = Trunc((num/10)-(10*centena))
+	unidad = num-(centena*100+decena*10)
+		
+	Escribir "unidad", unidad
+	Escribir "decena", decena
+	Escribir "centena", centena
+	
+FinAlgoritmo

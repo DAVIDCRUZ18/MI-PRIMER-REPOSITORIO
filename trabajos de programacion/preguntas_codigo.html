@@ -1,0 +1,135 @@
+<meta charset="UTF-8">
+
+<h1>CODIGO DE PREGUNTAS</h1>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var invitados = parseInt(prompt("Número de invitados"));
+    var vips = parseInt(prompt("Número de invitados VIP's"));
+
+    var total = invitados + vips;
+
+    imprimir("El total de invitados es " + total);
+
+    
+
+</script>
+
+    <meta charset="UTF-8">
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if (edad > 18 ){
+        if (tieneLicencia== "S" ){
+            imprimir("eres apto para conducir");
+            }
+        else{
+            imprimir("no eres apto para conducir");
+        }
+        }
+    if (edad < 18 ){
+        if (tieneLicencia== "N"){
+            imprimir("No eres apto para conducir");
+        }
+        else {
+            imprimir("No eres apto para conducir");
+
+        }
+        }
+
+
+</script>
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if(edad >= 18) {
+        if(tieneLicencia == "S") {
+            imprimir("Puedes conducir");
+        }
+    }
+
+    if(edad < 18) {
+        imprimir("No puedes conducir");
+    }
+
+</script>
+
+<h1>CODIGO MAS CORTO </h1>
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+    else {
+        imprimir("No puedes conducir");
+    }
+
+</script>
+
+
+<input/>
+<button>Mostrar texto escrito</button>
+
+<script>
+    var input = document.querySelector("input");
+
+    function mostrarTexto() {
+
+        alert(input.value);
+    }
+
+    var button = document.querySelector("button");
+    button.onclick = mostrarTexto;
+</script>
+
+<script>
+    var heroes = ["Superman", "Thor", "Batman", "Mujer Maravilla"];
+for( var i = 0; i < heroes.length; i++) {
+    alert(heroes[i]);
+}
+</script>

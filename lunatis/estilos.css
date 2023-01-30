@@ -1,0 +1,120 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Unbounded', cursive;
+}
+header{
+    background: #bbbbbb;
+    padding: 0 0 20px 0 ;
+
+}
+.logo{
+    width: 100%;
+    background: url(fondo-estilo-comic-rojo-diseno-plano_23-2148797742.jpg);
+    text-align: center;
+}
+.linea2{
+    text-transform: uppercase;
+    text-align: relative;
+}
+.lista1{
+    position: relative;
+    left: 780px;
+    font-weight: bold;
+    padding: 5px ;
+    margin: 20px 0 0 0 ;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+nav li{
+    position: right ;
+    display: inline;
+    margin: 0 5px 0 5px;
+    padding: 0 0 5px 0 ;
+    
+}
+.imagen_transparente{
+    width: 3%;
+    position: absolute;
+}
+.main{
+    /*background: linear-gradient(#e06e6e, #948888);*/
+    background: url("istockphoto-1167979135-170667a.jpg");
+}
+.main p {
+    width: 100%;
+}
+.titulo{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    width: 100%;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.texto_introductorio{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: left ;
+    padding: 20px 0;
+    width: 50%;
+    position: absolute;
+}
+.texto_introductorio p {
+    margin: 2em;
+    width: 100%;
+}
+.imagen_grande{
+    width: 40%;
+    margin: 20px;
+    position: relative;
+    left: 750px;
+    padding: 20px;
+}
+
+.imagen_inferior{
+    width: 200px;
+    margin: 20px;
+    
+}
+.maps{
+    margin: 20px 20px 20px 20px  ;
+    padding: 2em 0 ;
+    position: relative;
+    text-align: center ;
+}
+.segunda{
+    text-align: center;
+}
+.imagen_contenido{
+    width: 50%;
+    position: relative;
+    margin: 2em;
+    padding: 2em;
+    left: 300px;
+}
+
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+}
+.redes{
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 0 0 20px 0 ;
+
+}
+.imagenes_redes{
+    width: 40px;
+    margin: 5px;
+    top: 10px;
+    position: relative;
+}
