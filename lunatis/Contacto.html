@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lunatics.Bikes</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Unbounded:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="logo"><img src="Imagen de WhatsApp 2023-01-15 a las 23.31.36.jpg"></h1>
+        </div>
+        <div class="linea2">
+            <nav class="lista1">
+                <ul>
+                    <li><a href="pagina.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><img class="imagen_transparente" src="moto_transparente.png" alt="moto"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre y Apellido">
+        
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+        
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(+xx)1234567891">
+        
+            <label for="cajadetexto">Mensaje</label>
+            <textarea cols="70" rows="10" id="cajadetexto" class="input-padron" required
+                placeholder="¿Que le gustaria realizarse?"></textarea>
+        
+            <fieldset>
+                <legend>¿ Como le gustaria que lo contactemos ?</legend>
+        
+                <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+        
+        
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Telefono</label>
+        
+        
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+        
+        
+            </fieldset>
+        
+            <fieldset>
+                <legend>¿En que horario le gustaria ser atendido?</legend>
+        
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                    <option>Noche</option>
+                </select>
+            </fieldset>
+        
+        
+            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recibir novedades de lunatics bikes? </label>
+        
+        
+            <input type="submit" value="Enviar Formulario" class="enviar">
+        
+        
+        
+        
+        
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>lunes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <nav class="redes">
+            <ul>
+                <li><a href="https://www.facebook.com/Lunatics.Bikes">facebook<img class="imagenes_redes"
+                            src="facebook-g889c25220_640.png"></a></li>
+                <li><a href="https://www.instagram.com/lunatics.bikes/">instagram<img class="imagenes_redes"
+                            src="instagram-ge923e5ebc_1280.png"></a></li>
+            </ul>
+        </nav>
+        <img class="imagen_inferior" src="pie.jpg" alt="Logo de lunatics bikes">
+    </footer>
+</body>
+
+</html>
