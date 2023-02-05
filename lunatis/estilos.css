@@ -4,24 +4,32 @@ body {
 }
 header{
     background: #bbbbbb;
-    padding: 0 0 20px 0 ;
+    padding: 0 0 1em 0 ;
 
 }
-.logo{
+.fondo_logo{
+    background: url(imagenes/fondo-estilo-comic-rojo-diseno-plano_23-2148797742.jpg);
+    text-align: center;
     width: 100%;
-    background: url(fondo-estilo-comic-rojo-diseno-plano_23-2148797742.jpg);
+}
+.logo{
+    width: 95%;
+    position: relative;
     text-align: center;
 }
 .linea2{
     text-transform: uppercase;
-    text-align: relative;
+    text-align:left;
+    position: relative;
 }
 .lista1{
-    position: relative;
-    left: 780px;
+    text-align: left;
     font-weight: bold;
-    padding: 5px ;
     margin: 20px 0 0 0 ;
+}
+.lista1 ul{
+    position: relative;
+    text-align: center;
 }
 nav a{
     text-transform: uppercase;
@@ -33,20 +41,16 @@ nav a{
 nav li{
     position: right ;
     display: inline;
-    margin: 0 5px 0 5px;
-    padding: 0 0 5px 0 ;
+    margin: 0 1em 0 5px;
     
 }
 .imagen_transparente{
-    width: 3%;
+    width: 2%;
     position: absolute;
 }
 .main{
     /*background: linear-gradient(#e06e6e, #948888);*/
-    background: url("istockphoto-1167979135-170667a.jpg");
-}
-.main p {
-    width: 100%;
+    background: url("imagenes/istockphoto-1167979135-170667a.jpg");
 }
 .titulo{
     text-align: center;
@@ -64,27 +68,23 @@ nav li{
     font-size: 17px;
     text-decoration: none;
     text-align: left ;
-    padding: 20px 0;
+    padding: 20px ;
     width: 50%;
     position: absolute;
 }
 .texto_introductorio p {
     margin: 2em;
-    width: 100%;
 }
 .imagen_grande{
     width: 40%;
     margin: 20px;
     position: relative;
-    left: 750px;
-    padding: 20px;
+    padding: 0 0 1em 0;
+    text-align: right;
+    top: 2em;
+    left: 50%;
 }
 
-.imagen_inferior{
-    width: 200px;
-    margin: 20px;
-    
-}
 .maps{
     margin: 20px 20px 20px 20px  ;
     padding: 2em 0 ;
@@ -98,19 +98,22 @@ nav li{
     width: 50%;
     position: relative;
     margin: 2em;
-    padding: 2em;
-    left: 300px;
+    padding: 3em;
+    left: 20%;
 }
+.imagen_inferior {
+    width: 15%;
+    margin: 20px;
 
+}
 footer {
     text-align: center;
-    background: url(bg.jpg);
+    background: url(imagenes/bg.jpg);
 }
 .redes{
     background-color: antiquewhite;
     text-align: center;
     padding: 0 0 20px 0 ;
-
 }
 .imagenes_redes{
     width: 40px;
