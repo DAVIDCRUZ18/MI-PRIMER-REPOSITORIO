@@ -1,4 +1,6 @@
 body {
+    
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Unbounded', cursive;
 }
@@ -51,15 +53,15 @@ nav li{
 .main{
     /*background: linear-gradient(#e06e6e, #948888);*/
     background: url("imagenes/istockphoto-1167979135-170667a.jpg");
+    width: 100%;
 }
 .titulo{
     text-align: center;
     font-size: 30px;
     color: black;
-    width: 100%;
+    width: 90%;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 10px;
 }
 .texto_introductorio{
     text-transform: uppercase;
