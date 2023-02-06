@@ -1,6 +1,4 @@
 body {
-    
-    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Unbounded', cursive;
 }
@@ -62,6 +60,7 @@ nav li{
     width: 90%;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 1em 0 1em 0;
 }
 .texto_introductorio{
     text-transform: uppercase;
@@ -77,12 +76,14 @@ nav li{
 .texto_introductorio p {
     margin: 2em;
 }
+.texto_introductorio hr {
+    position: relative;
+}
 .imagen_grande{
     width: 40%;
     margin: 20px;
     position: relative;
     padding: 0 0 1em 0;
-    text-align: right;
     top: 2em;
     left: 50%;
 }
@@ -123,8 +124,72 @@ footer {
     top: 10px;
     position: relative;
 }
-/*css de productos*/
+/*css de contacto*/
 
-.productos_descripcion{
+/* Establece el margen para el formulario */
+form {
+    padding: 3em;
+}
 
+/* Establece el tipo de bloque y el tamaño de fuente para las etiquetas y leyendas dentro del formulario */
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/* Establece el tipo de bloque, el margen, el espaciado y el ancho para los elementos con clase "input-padron" dentro del formulario */
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+/* Establece el margen para los elementos con clase "checkbox" dentro del formulario */
+.checkbox {
+    margin: 20px 0;
+}
+
+/* Establece el ancho, el espaciado, el tamaño y peso de fuente, el color, el fondo, el borde, el radio de borde y la transición para el botón de "enviar" dentro del formulario */
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+/* Establece el fondo y la transformación para el botón de "enviar" cuando el cursor está sobre él */
+.enviar:hover {
+    background: #088c19;
+    transform: scale(1.2);
+}
+
+/* Establece el margen para la tabla */
+table {
+    margin:2em 2em 0 2em ;
+    padding: 4em 4em 10% 6em;
+    text-transform: uppercase;
+}
+
+/* Establece el fondo, el color y el peso de fuente para el encabezado de la tabla */
+thead {
+    background: #555555;
+    color: #FFFFFF;
+    font-weight: bold;
+    
+}
+
+/* Establece el borde, el espaciado para las celdas de la tabla */
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
 }
